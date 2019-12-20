@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+svg {
+    width: 50vw;
+    height: 50vh;
+    margin: 5pt;
+}
+
+.cls-1 {
+    fill:none;
+    stroke:#231f20;
+    stroke-miterlimit:10;
+    stroke-width:0.5px;
+    stroke-dasharray: 800;
+    animation: trace 5s linear forwards;
+}
+
+.jet {
+    animation: jet 3s linear forwards;
+    transition: fill 3s;
+    fill: none;
+}
+
+@keyframes jet {
+    to {
+        transition: fill 3s;
+        fill: silver
+    }
+}
+
+@keyframes trace {
+    0% {
+        stroke-dashoffset: 800;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
